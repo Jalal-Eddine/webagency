@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>WEBAGENCY</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
+</head>
+<body>
+		<header>
+			<div id="logo">
+				<img src="images/logo.png" alt="WebAgency">
+			</div>
+			<nav>
+				<ul>
+					<li><a href="#page1">Accueil</a></li>
+					<li><a href="#page2">Services</a></li>  
+				    <li><a href="#page3">Portfolio</a></li>
+					<li><a href="#page4">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+        <div class="container" id="page1">	
+	        <div class="text">
+		         <h1><em>WEBAGENCY</em> : L'AGENCE DE TOUS VOS PROJETS!</h1><br>
+		         <h4>Vous avez un projet web? La WebAgency vous aide à le réaliser !</h4><br><a href="#page2">Plus d'infos</a>
+	        </div>    	
+	        <input type="radio" id="i1" name="images" checked />
+	        <input type="radio" id="i2" name="images" />
+
+	        <div class="slide_img" id="one">					
+			    <img src="images/slider/bg1.jpg">		
+				<label class="prev" for="i2"><i class="fas fa-angle-down" id="left_arrow"></i></label>
+				<label class="next" for="i2"><i class="fas fa-angle-down" id="right_arrow"></i></label>	
+	        </div>
+	        <div class="slide_img" id="two">
+			    <img src="images/slider/bg2.jpg " >	
+				<label class="prev" for="i1"><i class="fas fa-angle-down" id="left_arrow"></i></label>
+				<label class="next" for="i1"><i class="fas fa-angle-down" id="right_arrow"></i></label>	
+	        </div>			
+	        <div id="nav_slide"> 
+	         	<label for="i1" class="dots" id="dot1"></label>
+	        	<label for="i2" class="dots" id="dot2"></label>
+	        </div>	
+        </div>
+        <!-- page2 -->
+	 <section id="page2">
+		<div class="title_page">
+			<h1>NOS SERVICES</h1>
+			<div class="hr"></div>
+			<div class="title-circle" ></div>
+		    <p>Nos équipes vous proposent des sites sur-mesure avec les technologies adaptées à vos besoins. Nous construisons votre projet étape par étape en mobilisant toutes nos compétences.
+		    </p>
+		</div>
+		<div id="bloc_services">
+		<div class="image">
+			<img src="images/main-feature.png">
+		</div>
+		<div class="list_serv">
+			<div class="icon">
+				    <div class="mini-circle" ></div>
+					<div class="circle">
+					<span><i class="fas fa-chart-line"></i></span></div>
+
+                    <div class="mini-circle" ></div>
+					<div class="circle">
+					<span><i class="fas fa-cubes"></i></span></div>
+
+                    <div class="mini-circle" ></div>
+					<div class="circle">
+					<span><i class="fas fa-chart-pie"></i></span></div>								
+			</div>
+			<div class="serv_list">
+					<h3>UX design</h3>
+					<p>nous concevons des interfaces accessibles et facile à prendre en main pour tout type de support. Nous analysons les souhaits du client et les besoins des cibles afin de concilier les deux.</p>
+					
+					<h3>UI design</h3>
+					<p>Nous concevons des interfaces agréable.Notre UI designers met en œuvre leurs compétences techniques et leurs créativités pour concevoir des maquettes graphiques correspondant aux souhaits de nos client.</p>
+				    
+					<h3>SEO</h3>
+					<p>Nos sites possèdent une architecture naturellement adaptée au bon référencement, balisage optimal & contenus pertinents sont nos meilleurs alliés.</p>
+		    </div>
+		</div>
+		</div>
+	</section>
+	<!-- page3 -->
+	<section id="page3">
+		<div class="title_page">
+			<h1>NOS PROJETS</h1>
+			<div class="hr"></div>
+			<div class="title-circle" ></div>
+		    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		    </p>		    
+		</div>
+		<div class="list_proj">
+			<input type="radio" id="m1" name="menu" checked>
+			<input type="radio" id="m2" name="menu">
+			<input type="radio" id="m3" name="menu">
+			<input type="radio" id="m4" name="menu">
+
+			<div id="list_menu">
+				<label class="menu" for="m1" id="l1"> All Works</label>
+				<label class="menu" for="m2" id="l2"> Creative</label>
+				<label class="menu" for="m3" id="l3"> Corporate</label>
+				<label class="menu" for="m4" id="l4"> Portfolio</label>
+			</div>
+			    <label class="arrow" for="m1" id="a1"><i class="fas fa-caret-down"></i></label>
+			    <label class="arrow" for="m2" id="a2"><i class="fas fa-caret-down"></i></label>
+			    <label class="arrow" for="m3" id="a3"><i class="fas fa-caret-down"></i></label>
+			    <label class="arrow" for="m4" id="a4"><i class="fas fa-caret-down"></i></label>
+		</div>
+		<div class="portfolio" id="1">
+
+		    <div class="gallery">
+		    	<span><i class="far fa-eye"></i></span>
+		    	<div class="image_desc"><h4>Portfilio Item 1</h4><h5>Lorem ipsum dolor sit</h5></div>
+		    </div>
+		    <div class="gallery">
+		    	<span><i class="far fa-eye"></i></span>
+		    	<div class="image_desc"><h4>Portfilio Item 2</h4><h5>Lorem ipsum dolor sit</h5></div>
+		    </div>
+		    <div class="gallery">
+		    	<span><i class="far fa-eye"></i></span>
+		    	<div class="image_desc"><h4>Portfilio Item 3</h4><h5>Lorem ipsum dolor sit</h5></div>
+		    </div>
+		    <div class="gallery">
+		    	<span><i class="far fa-eye"></i></span>
+		    	<div class="image_desc"><h4>Portfilio Item 4</h4><h5>Lorem ipsum dolor sit</h5></div>
+		    </div>
+		    <div class="gallery">
+		    	<span><i class="far fa-eye"></i></span>
+		    	<div class="image_desc"><h4>Portfilio Item 5</h4><h5>Lorem ipsum dolor sit</h5></div>
+		    </div>
+		    <div class="gallery">
+		    	<span><i class="far fa-eye"></i></span>
+		    	<div class="image_desc"><h4>Portfilio Item 6</h4><h5>Lorem ipsum dolor sit</h5></div>
+		    </div>
+		    <div class="gallery">
+		    	<span><i class="far fa-eye"></i></span>
+		    	<div class="image_desc"><h4>Portfilio Item 7</h4><h5>Lorem ipsum dolor sit</h5></div>
+		    </div>
+		    <div class="gallery">
+		    	<span><i class="far fa-eye"></i></span>
+		    	<div class="image_desc"><h4>Portfilio Item 8</h4><h5>Lorem ipsum dolor sit</h5></div>
+		    </div>
+		    <div class="gallery">
+		    	<span><i class="far fa-eye"></i></span>
+		    	<div class="image_desc"><h4>Portfilio Item 9</h4><h5>Lorem ipsum dolor sit</h5></div>
+		    </div>
+
+	    </div>
+	</section>
+	<!-- page 4 -->
+	<section id="page4">
+	<div class="mapouter">
+		<div class="gmap_canvas">
+
+			<iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=25%20Rue%20D'auteville%2075010%20Paris&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+			<a href="https://www.embedgooglemap.net"></a>
+	    </div>
+	</div>	
+	<div class="form">
+		<div class="contact">
+		  <h1>Contact Info</h1>
+		  <h4>WebAgency SAS</h4>
+		  <p>25 Rue d'Hauteville 75010 Paris<br>
+		  Tel : 01 02 03 04 05</p>
+	    </div>	
+	    <form method="POST">
+		  <input type="text" name="name" placeholder="  Name"><br>
+		  <input type="email" name="email" placeholder="  Email"><br>
+		  <input type="text" name="subject" placeholder="  Subject"><br>
+		  <textarea name="message" id="message" placeholder=" Message" ></textarea>
+		  <input type="submit" value="Send Message" id="valid">
+	    </form>
+	</div>
+	</section>
+	
+</body>
+</html>			
