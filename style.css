@@ -364,7 +364,7 @@ section p{
 	justify-content: center;
     background-color: rgba(204,204,204,0.5);
 	margin: 0;
-	border: solid 2px red;
+	/*border: solid 2px red;*/
 	border-radius: 5%;
 
 }
