@@ -238,6 +238,7 @@ section p{
 	align-items: center;
 	width: 50%;
 	margin-top: 5%;
+	border: solid #eee;
 }
 .title_page h1, .title_page p{
 	text-align: center;
@@ -297,7 +298,7 @@ section p{
 
 }
 .serv_list{
-	border:solid red;
+	/*border:solid red;*/
 	position: relative;
 	left: 2%;
 	margin-right: 3%;
