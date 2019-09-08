@@ -245,17 +245,18 @@ section p{
 }
 .title_page p{
 	margin-top: 5%;
+	font-size: 1.5vw;
 }
 #page2  h1,#page3 h1{
 	font-weight: bold;
-	font-size: 2em;
+	font-size: 2.5vw;
 	font-family: 'Roboto';
 }
 .hr{
 	position: absolute;
 	height: 1px;
 	background-color: rgba(235,235,235,1);
-	width: 138px;
+	width: 10em;
 	max-width: 138px;
 	top: 53%;
 }
@@ -270,21 +271,23 @@ section p{
     top: 46%;
 }
 #bloc_services{
+	/*position: */
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
+	justify-content: center;
 	margin-top: 5%;
 }
 .image {
 	position: relative;
     padding: 0%;
-    left: 15%;
+    size: 35vw;
 }
 .list_serv{
 	position: relative;
     display: flex;
     flex-direction: row;
-    left: 25%;
+/*    left: 25%;*/
     width: 40%;
     min-width: 30%;
     margin-top: 4%;
