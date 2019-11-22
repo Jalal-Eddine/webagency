@@ -245,6 +245,7 @@ body {
 }
 
 .title_page p{
+
 	margin-top: 4.5rem;
 	font-size: 1.5vw;
 }
@@ -260,6 +261,7 @@ body {
 	width: 15rem;
 	max-width: 13.8rem;
 	top: 7rem;
+
 }
 .title-circle {
 	position: absolute;
