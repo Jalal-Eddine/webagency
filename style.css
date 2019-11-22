@@ -113,29 +113,27 @@ body {
 		height: inherit;
 	}
 	 .prev, .next{
-		width: 5%;
-		height:14%;
+		width: 4rem;
+		height:8rem;
 		position: absolute;
 		top:38%; 
 		background-color: rgba(51,51,51,0.7);
 		color:rgba(244, 244, 244,.9);
 		z-index: 99;
-		transition: .45s;
 		cursor: pointer;
 		font-size: 3rem;
-		transform: translateY(-50%);
 		display: flex;
-		align-items: flex-start;
+		align-items: center;
 		justify-content: center;
-		border-radius: 50%;
 	}
 	.next{
-		right:-2.7%;
-        transform: rotate(-90deg);
+		border-bottom-left-radius: 8rem;
+		border-top-left-radius: 8rem;
+	    right:0;
 	}
 	.prev{
-		left:-3%;
-        transform: rotate(90deg);
+		border-bottom-right-radius: 8rem;
+		border-top-right-radius: 8rem;
 	}	
 	.prev:hover, .next:hover{
 		transition: .3s;
@@ -402,7 +400,7 @@ body {
 {color: rgba(70,140,173,0.8);
 }
 
-/*image gallery*/
+/****image gallery****/
 .portfolio{
 	display: flex;
 	flex-wrap: wrap;
@@ -439,7 +437,7 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	color: #fff;
-
+	font-size: 1.5rem;
 }
 .image_desc *{
 	margin: 0;
@@ -458,6 +456,7 @@ body {
 	border-radius: 50%;
 	color: #fff;
 	background-color: rgba(51,153,153,1);
+	font-size: 1.5rem;
 }
 .image_desc,.gallery span{z-index: -1;}
 .gallery:hover .image_desc{z-index: 99;}
@@ -467,27 +466,26 @@ body {
 	transform: scale(1.1);
 }
 
-/****************page4******************/
+/****************FORM + MAPS******************/
 /***************************************/
 
 #page4{
 	position: relative;
 	background-color: #aec5ca;
-	height: 100%;
+	height: 90rem;
 	width: 100%;
-
 }
 .mapouter{
 	text-align:right;
-	height:100%;
-	width:100%;
+	height:inherit;
+	width:inherit;
 	opacity: 0.7;
 	}
 .gmap_canvas {
 	overflow:hidden;
 	background:none!important;
-	height:100%;
-	width:100%;
+	height:inherit;
+	width:inherit;
 }
 .form{
 	position: absolute;
@@ -501,11 +499,10 @@ body {
 	margin-top: 5%;
 }
 .contact{
-    /*border: solid 1px;*/
     position: relative;
 	width: 90%;
 	left: 5%;
-
+	font-size: 1.5rem;
 }
 .contact h1{
     margin: 5% 0 5% 0;
@@ -552,3 +549,46 @@ textarea{
 	margin-top: .5rem;
 	cursor: pointer;
 }
+
+ /* MEDIA QUERY MANAGER */
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+1em = 16px
+*/
+/*//600px phone*/
+    @media only screen and (max-width: 37.5em) { 
+
+	 }   
+/* //900px Tablet Portrait*/
+    @media only screen and (max-width: 56.25em) { 
+		html{
+			/* //1 rem = 8px, 8/16 = 50% */
+			font-size: 50%;
+		}
+	 }   
+/* 1200px Tablet landscape*/
+    @media only screen and (max-width: 75em) { 
+	html{
+		/* //1 rem = 9px, 9/16 = 50% */
+		font-size: 56.25%;
+	}	
+	 }   
+/*1800 Big desktop*/
+     @media only screen and (min-width: 112.5em) { 
+		html{
+			/* //1rem = 12, 12/16 */
+			font-size: 75%;
+		}	
+	  } 
+
