@@ -202,7 +202,14 @@ body {
 }
     #i1:checked  ~  #nav_slide #dot1,
     #i2:checked  ~  #nav_slide #dot2
-    { background-color: #5cadd3;}
+	{ background-color: #5cadd3;}
+
+@media only screen and (max-width: 900px) { 
+    .container{
+		display: none;
+	}
+
+	 }  
 
    /**********Text_slide properties	********/
    /***************************************/
@@ -493,6 +500,12 @@ body {
 .portfolio .gallery:hover {
 	transform: scale(1.1);
 }
+   
+/* //900px Tablet Portrait*/  
+@media only screen  { 
+	.gallery .image_desc{z-index: 99;}
+	.gallery span{z-index: 100;}
+} 
 
 /****************FORM + MAPS******************/
 /***************************************/
